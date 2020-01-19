@@ -15,13 +15,11 @@ export default class Navbar extends Component {
     openMenu() {
         const toggler = document.getElementById('toggler')
         const navList = document.getElementById('navbar-links')
-        const blured = document.getElementById('blured')
         const linkBehind = document.getElementById('link-behind')
 
         toggler.addEventListener('click', () => {
             toggler.classList.toggle('activated')
             navList.classList.toggle('activated')
-            blured.classList.toggle('activated')
         })
 
         navList.childNodes.forEach(el => {
@@ -51,7 +49,6 @@ export default class Navbar extends Component {
                     <div></div>
                     <div></div>
                 </div>
-                <div id="blured"></div>
                 <ul id="navbar-links">
                     <div id="link-behind">Home</div>
                     <li>Home</li>
