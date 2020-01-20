@@ -19,9 +19,19 @@
 
 #biggest-bean {
     position: absolute;
-    left: -14%;
-    top: -10vh;
+    left: -4%;
+    top: -20vh;
     width: 57%;
     z-index: -1;
-    transition: all ease-in-out 400ms;
+    transition: all ease-in-out 10000ms;
+    transform-origin: right;
+}
+
+#biggest-bean.shortening {
+    left: -10%;
+    transform: scale(0.5);
+}
+
+#biggest-bean path {
+    transition: all ease-in-out 3800ms;
 }
