@@ -12,26 +12,23 @@
 
 #home-avatar {
     position: absolute;
-    right: 5%;
+    right: 9%;
     top: 18vh;
     width: 37%;
+    z-index: -2;
 }
 
 #biggest-bean {
     position: absolute;
-    left: -4%;
-    top: -20vh;
-    width: 57%;
+    left: -17%;
+    top: -30vh;
+    width: 80%;
     z-index: -1;
+    transform: rotate(-20deg);
     transition: all ease-in-out 10000ms;
     transform-origin: right;
 }
 
-#biggest-bean.shortening {
-    left: -10%;
-    transform: scale(0.5);
-}
-
 #biggest-bean path {
-    transition: all ease-in-out 3800ms;
+    transition: all cubic-bezier(.51, .24, .47, 1.18) 6000ms;
 }

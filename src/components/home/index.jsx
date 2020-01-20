@@ -16,7 +16,7 @@ export default class Home extends Component {
     beanMover() {
         const values = [
             ["M810.246", "584.444C810.246", "1003.896", "1278.98", "1422.62", "374.469", "1329.49C152.244", "1329.49", "0", "813.551", "0", "524.099C0", "234.647", "261.215", "0", "583.44", "0C905.665", "0", "810.246", "294.992", "810.246", "584.444Z"],
-            ["M1189", "543.099C1189", "832.551", "1279.48", "1422.72", "474.969", "1329.59C152.744", "1329.59", "0.5", "813.65", "0.5", "524.198C0.5", "234.746", "261.715", "0.0991821", "583.94", "0.0991821C906.165", "0.0991821", "1189", "253.647", "1189", "543.099Z"]
+            ["M1214.53 440.758C1214.53 730.21 1307.01 1274.13 502.5 1181C180.275 1181 0.531494 843.21 0.531494 553.758C0.531494 264.306 245.307 0.757629 567.531 0.757629C889.756 0.757629 1214.53 151.306 1214.53 440.758Z"]
         ]
 
         // this.setState({
@@ -26,10 +26,8 @@ export default class Home extends Component {
         setInterval(() => {
             if(this.switcher === 0) {
                 this.setState({
-                    beanNumbers: values[1].join(" ")
+                    beanNumbers: values[1]
                 })
-
-                document.getElementById("biggest-bean").classList.add("shortening")
 
                 this.switcher = 1
             } else {
@@ -37,12 +35,10 @@ export default class Home extends Component {
                     beanNumbers: values[0].join(" ")
                 })
 
-                document.getElementById("biggest-bean").classList.remove("shortening")
-
                 this.switcher = 0
             }
 
-        }, 1600)
+        }, 3000)
 
     }
 
