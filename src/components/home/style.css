@@ -1,0 +1,37 @@
+#Home {
+    width: 100%;
+    height: 100vh;
+}
+
+#Home header {
+    font-size: 270%;
+    font-weight: 300;
+    user-select: none;
+    margin: 20vh 5%;
+}
+
+#home-avatar {
+    position: absolute;
+    right: 5%;
+    top: 18vh;
+    width: 37%;
+}
+
+#biggest-bean {
+    position: absolute;
+    left: -4%;
+    top: -20vh;
+    width: 57%;
+    z-index: -1;
+    transition: all ease-in-out 10000ms;
+    transform-origin: right;
+}
+
+#biggest-bean.shortening {
+    left: -10%;
+    transform: scale(0.5);
+}
+
+#biggest-bean path {
+    transition: all ease-in-out 3800ms;
+}
