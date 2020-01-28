@@ -21,14 +21,18 @@
 #biggest-bean {
     position: absolute;
     left: -17%;
-    top: -30vh;
+    top: -35vh;
     width: 80%;
     z-index: -1;
     transform: rotate(-20deg);
     transition: all ease-in-out 10000ms;
+    -webkit-transition: all ease-in-out 10000ms;
+    -moz-transition: all ease-in-out 10000ms;
     transform-origin: right;
 }
 
 #biggest-bean path {
     transition: all cubic-bezier(.51, .24, .47, 1.18) 6000ms;
+    -webkit-transition: all cubic-bezier(.51, .24, .47, 1.18) 6000ms;
+    -moz-transition: all cubic-bezier(.51, .24, .47, 1.18) 6000ms;
 }
