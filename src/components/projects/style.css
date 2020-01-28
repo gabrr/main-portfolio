@@ -1,0 +1,57 @@
+#Projects {
+    padding: 40px 5%;
+    margin-top: 400px;
+}
+
+#Projects h1 {
+    margin-bottom: 60px;
+}
+
+#Projects p {
+    width: 40%;
+}
+
+
+/* .images-holder::-webkit-scrollbar {
+    display: none;
+} */
+
+.images-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 30px auto 90px;
+}
+
+.images-holder {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    width: 45%;
+    transform: translateX(-50%);
+    margin: auto;
+    -webkit-overflow-scrolling: touch;
+    /* for better scrolling on iphone */
+    overflow-y: hidden;
+    overflow-x: scroll;
+    /* overflow-x: scroll; */
+    display: grid;
+    /* Hide scrollbar for IE and Edge */
+    -ms-overflow-style: none;
+    scroll-snap-type: x mandatory;
+    grid-template-columns: repeat(3, 100%);
+}
+
+.project-img {
+    height: 100%;
+    margin: 0;
+    padding-right: 90%;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    position: relative;
+}
+
+.see-more {
+    text-align: center;
+    text-decoration: underline;
+}

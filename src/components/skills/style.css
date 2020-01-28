@@ -1,0 +1,13 @@
+#Skills {
+    margin-top: 400px;
+    padding: 40px 5%;
+}
+
+#Skills .skills-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    width: 70%;
+    margin: 60px auto;
+    grid-row-gap: 30px;
+}

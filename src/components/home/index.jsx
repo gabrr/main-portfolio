@@ -19,10 +19,6 @@ export default class Home extends Component {
             ["M1214.53 440.758C1214.53 730.21 1307.01 1274.13 502.5 1181C180.275 1181 0.531494 843.21 0.531494 553.758C0.531494 264.306 245.307 0.757629 567.531 0.757629C889.756 0.757629 1214.53 151.306 1214.53 440.758Z"]
         ]
 
-        // this.setState({
-        //     beanNumbers: values[0].join(" ")
-        // })
-
         setInterval(() => {
             if(this.switcher === 0) {
                 this.setState({
@@ -38,7 +34,7 @@ export default class Home extends Component {
                 this.switcher = 0
             }
 
-        }, 3000)
+        }, 1000)
 
     }
 
@@ -57,8 +53,8 @@ export default class Home extends Component {
                     <path d={this.state.beanNumbers} fill="url(#paint0_linear)"/>
                     <defs>
                     <linearGradient id="paint0_linear" x1="477.075" y1="26.6088" x2="477.075" y2="1074.81" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#F70909"/>
-                    <stop offset="1" stop-color="#D3550E"/>
+                    <stop stopColor="#F70909"/>
+                    <stop offset="1" stopColor="#D3550E"/>
                     </linearGradient>
                     </defs>
                 </svg>
