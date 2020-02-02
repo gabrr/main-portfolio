@@ -8,6 +8,7 @@ const Home = lazy(() => import('./components/home'))
 const About = lazy(() => import('./components/about'))
 const Skills = lazy(() => import('./components/skills'))
 const Projects = lazy(() => AppBody)
+const Contact = lazy(() => import('./components/contact'))
 
 const timing = 2000
 
@@ -59,6 +60,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
+          <Contact />
         </Provider>
       </Suspense>
     </div>

@@ -1,0 +1,45 @@
+#Contact {
+    padding-top: 120px;
+    background-color: rgba(255, 255, 255, 0.2)
+}
+
+.contact-list {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#Contact form {
+    width: 30%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+#Contact form header {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#Contact input {
+    height: 40px;
+}
+
+#Contact input,
+#Contact textarea {
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+
+#Contact .form-button {
+    width: max-content;
+    padding: 15px 50px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+footer {
+    padding: 60px 0;
+}
