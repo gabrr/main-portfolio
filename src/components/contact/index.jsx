@@ -13,9 +13,9 @@ export default class Contact extends Component {
                 </ul>
                 <form>
                     <header>Leave a message</header>
-                    <input type="text" name="name-input" id="name-input"/>
-                    <input type="email" name="email-input" id="email-input"/>
-                    <textarea name="message-input" id="message-input" cols="30" rows="10"></textarea>
+                    <input type="text" name="name-input" id="name-input" placeholder="Name"/>
+                    <input type="email" name="email-input" id="email-input" placeholder="E-mail"/>
+                    <textarea name="message-input" id="message-input" cols="30" rows="10" placeholder="A message" ></textarea>
                     <button className="form-button" type="submit">Send</button>
                 </form>
                 <div className="social-medias">

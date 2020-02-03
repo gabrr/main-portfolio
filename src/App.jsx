@@ -42,7 +42,7 @@ const Loading = () => {
 
   return(
     <div id="loadingLogo">
-      gabrr...
+      Gabrr...
     </div>
   )
 }
