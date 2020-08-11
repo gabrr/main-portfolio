@@ -52,10 +52,7 @@ export default () =>  {
     }, [state.imgs])
        
     useEffect(() => {
-        setstate({
-            ...state,
-            imgs: importAll(require.context('../../assets/projects/'))
-        })
+        setstate((s) => ({...s, imgs: importAll(require.context('../../assets/projects/'))}))
     }, [])
 
     return (
