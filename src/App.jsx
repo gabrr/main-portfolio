@@ -1,59 +1,47 @@
-import React, { Suspense, lazy, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import store from './redux/store'
 import { Provider } from 'react-redux'
 
-const Navbar = lazy(() => import('./components/navbar'))
-const Home = lazy(() => import('./components/home'))
-const About = lazy(() => import('./components/about'))
-const Skills = lazy(() => import('./components/skills'))
-const Projects = lazy(() => AppBody)
-const Contact = lazy(() => import('./components/contact'))
+import Navbar from './components/navbar'
+import Home from './components/home'
+import About from './components/about'
+import Skills from './components/skills'
+import Projects from './components/projects'
+import Contact from './components/contact'
 
-const timing = 2000
 
-const AppBody = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve(import('./components/projects'))
-  }, timing)
-})
+
+
 
 const Loading = () => {
-  let interval = timing / 4
-  
-  const shorteningWord = (text) => {
-    let newText = text
-    return newText.split("").slice(0, -1).join("")
-  }
-
-  const shortByTime = setInterval(function test() {
-    let loadingLogo = document.getElementById("loadingLogo")
-    loadingLogo.innerText = shorteningWord(loadingLogo.innerText)
-    console.log("it is loading")
-  }, interval);
-  
+  const [loading, setloading] = useState(true)
 
   useEffect(() => {
     setTimeout(() => {
-      clearInterval(shortByTime)
-    }, timing * 0.9);
-  })
-  
+      setloading(false)
+    }, 1100)
+  }, [])
 
-  return(
-    <div id="loadingLogo">
-      Gabrr...
-    </div>
+  return (
+    <>
+      {loading && (
+        <div className={`loadingContainer ${loading}`}>
+        <div className="loadingDot"></div>
+        <div className="loadingDot"></div>
+        <div className="loadingDot"></div>
+      </div>
+    )}
+    </>
   )
 }
 
 
 
 function App() {
-
   return (
     <div className="App">
-      <Suspense fallback={<Loading />}>
+      <Loading/>
         <Provider store={store}>
           <Navbar />
           <Home />
@@ -62,7 +50,6 @@ function App() {
           <Projects />
           <Contact />
         </Provider>
-      </Suspense>
     </div>
   );
 }
