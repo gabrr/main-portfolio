@@ -275,4 +275,6 @@
   
     window.Metadata = window.Metadata || {};
     window.Metadata.pixel = { init, sendData, sendFormData, getAllFields, log };
+
+    console.log("Metadata is running!")
   })();
