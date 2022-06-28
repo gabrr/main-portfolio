@@ -11,7 +11,10 @@ export default class Contact extends Component {
                     <li><strong>My Location: </strong>São Paulo, Brazil</li>
                     <li><strong>E-mail: </strong>g.webdevelopr@gmail.com</li>
                 </ul>
-                <form>
+                <form onSubmit={(e) => {
+                    e.preventDefault()
+                    console.log(e)
+                    }}>
                     <header>Leave a message</header>
                     <input type="text" name="name-input" id="name-input" placeholder="Name"/>
                     <input type="email" name="email-input" id="email-input" placeholder="E-mail"/>
