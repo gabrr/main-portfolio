@@ -1,6 +1,6 @@
 (function () {
     var accountId;
-    var baseUrl = "http://localhost:8000";
+    var baseUrl = "https://gabrr-ip-server.herokuapp.com";
     var primaryKey = "id";
     var listenFormSubmit = true;
     var onFormInit = function () {};
